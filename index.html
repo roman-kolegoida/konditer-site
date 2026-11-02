@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сладкий Петербург — Кондитерская</title>
+    <link type="image/x-icon" href="img/logo.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="app.js" defer=""></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="img/logo.jpg" alt="Логотип">
+    </div>
+    <h1 class="site-title">Авторские десерты Петербурга</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">О кондитере</a></li>
+            <li><a href="#section2">Десерты</a></li>
+            <li><a href="#section3">Рецепты и видео</a></li>
+            <li><a href="#section4">Заказать</a></li>
+        </ul>
+    </nav>
+  </header>
+
+    <!-- Слайдер -->
+    <div class="slider-container">
+        <div class="slider">
+          <img src="img/1.jpg" height="100px" onclick="openFullscreenImage(this)" alt="Десерт 1">
+          <img src="img/2.jpg" height="100px" onclick="openFullscreenImage(this)" alt="Десерт 2">
+          <img src="img/3.jpg" height="100px" onclick="openFullscreenImage(this)" alt="Десерт 3">
+          <img src="img/4.jpg" height="100px" onclick="openFullscreenImage(this)" alt="Десерт 4">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt;</button>  
+    </div>
+
+    <!-- Секция 1: О кондитере -->
+    <section id="section1">
+      <div class="text_o_nas">
+        <h1>О кондитере:</h1>
+        <p>Санкт-Петербург вдохновляет на создание прекрасного. Мои десерты — это сочетание классических французских традиций и петербургского изящества.</p>
+        <p>Я создаю торты и пирожные ручной работы, которые украсят любой ваш праздник и наполнят его сладкой атмосферой северной столицы.</p>
+      </div>
+    </section>
+
+    <!-- Секция 2: Галерея десертов и рецепты под ними -->
+    <section id="section2">
+      <h2 style="color: #fff; text-align: center; margin-bottom: 20px;">Наши сладости</h2>
+      <div class="column-container">
+        <div class="column">
+            <h2>Торт «Белые ночи»</h2>
+            <img src="img/5.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Торт">
+            <p>Нежный бисквит с ванильным кремом и легкой ноткой белого шоколада, напоминающий светлые ночи на Неве.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Взбить 4 яйца со 150г сахара, аккуратно вмешать 150г муки. Выпекать бисквит 30 мин при 180°C. Прослоить кремом из взбитых сливок и белого шоколада.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Пирожные «Эрмитаж»</h2>
+            <img src="img/6.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Пирожные">
+            <p>Изысканные мини-пирожные с ягодной начинкой, оформленные по канонам кондитерского искусства.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Основа из песочного теста, наполняется заварным кремом. Сверху украшается свежей малиной и покрывается кондитерским гелем.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Чизкейк «Невский»</h2>
+            <img src="img/7.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Чизкейк">
+            <p>Классический тающий во рту чизкейк с карамельной глазурью и ореховой крошкой.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Смешать 500г творожного сыра, 150г сахара и 2 яйца. Выпекать на водяной бане при 160°C один час, охладить и полить соленой карамелью.
+            </p>
+        </div>
+      </div>
+
+      <div class="column-container">
+        <div class="column">
+            <h2>Тарталетки с ягодами</h2>
+            <img src="img/8.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Тарталетки">
+            <p>Хрустящее песочное тесто, заварной крем и свежие сезонные ягоды.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Из песочного теста сформировать корзиночки, выпечь вслепую. Заполнить заварным кремом и выложить ассорти из клубники и черники.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Шоколадный трюфель</h2>
+            <img src="img/9.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Трюфель">
+            <p>Насыщенный темный бельгийский шоколад ручной работы для истинных ценителей.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Растопить 200г темного шоколада со 100мл горячих сливок. Остудить массу в холодильнике, скатать шарики и обвалять их в какао-порошке.
+            </p>
+        </div>
+        <div class="column">
+            <h2>Медовик «Имперский»</h2>
+            <img src="img/10.jpg" class="pic" onclick="openFullscreenImage(this)" alt="Медовик">
+            <p>Тончайшие медовые коржи с ароматным сметанным кремом по старинному рецепту.</p>
+            <p style="font-size: 14px; color: #ffb366; margin-top: 10px; border-top: 1px dashed #555; padding-top: 8px;">
+              <strong>Рецепт:</strong> Заварить на огне мед с маслом и содой, добавить муку и замесить тесто. Раскатать тонкие коржи, испечь за 3 минуты каждый, промазать сметаной.
+            </p>
+        </div>
+      </div>
+
+      <div id="fullscreen-container" class="hidden">
+        <span class="close-button" onclick="closeFullscreenImage()">&times;</span>
+        <img src="" alt="Полноэкранное изображение" id="fullscreen-image">
+      </div>
+    </section>
+
+    <!-- Секция 3: Рецепты и видео -->
+    <section id="section3" style="color: #fff; padding: 40px 0; text-align: center;">
+      <h2>Рецепты и секреты мастерства</h2>
+      <p style="max-width: 800px; margin: 10px auto 20px auto;">Видео-урок по приготовлению легендарных советских пышек:</p>
+      
+      <div style="background: #333; padding: 20px; border-radius: 8px; max-width: 500px; margin: 0 auto; border: 1px solid #a7401b;">
+        <!-- Превью-картинка видео -->
+        <img src="img/11.jpg" alt="Превью видео" style="width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;">
+        <!-- Ссылка на YouTube -->
+        <a href="https://www.youtube.com/watch?v=YIGCWnH2zFc" target="_blank" style="display: inline-block; background-color: #a7401b; color: #fff; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; text-transform: uppercase;">Смотреть видео на YouTube</a>
+      </div>
+    </section>
+
+    <!-- Секция 4: Заказ / Обратная связь -->
+    <section id="section4">
+      <h2 style="color: #fff; text-align: center; margin-bottom: 10px;">Заказать десерт</h2>
+      <form class="obratnuj-zvonok" autocomplete="off" method='post'>
+          <div class="form-zvonok"> 
+            <div>
+              <label>Имя <span>*</span></label>
+              <input type='text' name='name' required>
+            </div>
+            <div>
+              <label>Номер телефона (с кодом) <span>*</span></label>
+              <input type='text' name='phone' required>
+            </div>
+            <div>
+              <label>Какое угощение хотите?</label>
+              <input type='text' name='message'>
+            </div>
+            <div>
+              <label>Введите текст с картинки <span>*</span></label>
+              <input type='text' name='capcha' required>
+            </div>
+            <img src="img/capcha.jpg" class="pic" alt="Капча">
+            <input class="bot-send-mail" type='submit' value='Послать заявку'>
+          </div>
+      </form>
+    </section>
+
+    <button id="scrollToTopButton">Вверх</button>
+
+</body>
+
+<footer style="width: 100%;">
+  <div class="social-icons">
+    <a href="https://t.me/blog_andychef" target="_blank" class="social-icon"><img src="img/tg.webp" alt="Tg"></a>
+    <a href="https://vk.ru/cc_konditer" target="_blank" class="social-icon"><img src="img/vk.png" alt="Vk"></a>
+    <a href="https://www.instagram.com/malicake_pl/" target="_blank" class="social-icon"><img src="img/ig.png" alt="Ig"></a>
+  </div>
+</footer>
+</html>
